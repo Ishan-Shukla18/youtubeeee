@@ -12,7 +12,7 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(200, 200, 200);
-    z-index: 100;
+    z-index: 10;
 }
 .left-section
 {
@@ -132,6 +132,9 @@
     padding-bottom: 2px;
     border-radius: 10px;
 }
+
+
+
 .search-tool,
 .voice-search,
 .upload-button,
@@ -172,6 +175,42 @@
 .upload-button:hover .tool-tip,
 .youtube-apps-button:hover .tool-tip,
 .notification-div:hover .tool-tip
+
 {
     opacity: 1;
+}
+
+
+@media only screen and (max-width: 415px)
+{
+    .header{
+        height: 50px;
+    }
+    .hamburger-menu
+    {
+        opacity: 0;
+    }
+    .youtube-logo
+    {
+        margin-left: -65px;
+    }
+    .search{
+        opacity: 0;
+    }
+    .search-tool
+    {
+        border: none;
+        background-color: white;
+        margin-left: 50px;
+    }
+    .voice-search, .youtube-apps, .current-user{
+        opacity: 0;
+    }
+    .upload
+    {
+        margin-left: -150px;
+    }
+    .notification-div{
+        margin-left: -400px;
+    }
 }
